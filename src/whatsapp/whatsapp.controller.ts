@@ -9,4 +9,5 @@ export class WhatsappController {
   async enviar(@Body() body: { numero: string, nombre: string, fechaPago: string }) {
     return this.ws.enviarMensaje(body.numero, body.nombre, body.fechaPago);
   }
+
 }
